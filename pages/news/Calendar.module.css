@@ -1,0 +1,10 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  border: solid black;
+}
+
+.body {
+  display: flex;
+  justify-content: space-around;
+}

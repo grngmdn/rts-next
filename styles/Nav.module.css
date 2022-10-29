@@ -1,0 +1,40 @@
+.nav {
+  background-color: #343a3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7vh;
+  width: 100%;
+  /* border: solid white; */
+}
+
+.list {
+  display: flex;
+  /* justify-content: space-evenly; */
+  /* align-items: space-around; */
+  /* border: solid white; */
+  list-style: none;
+  width: 80vw;
+  font-size: 13px;
+}
+
+.navItem {
+  /* border: solid white; */
+  /* position: relative; */
+  /* padding: 0 8px; */
+}
+
+.dropdown {
+  /* position: absolute; */
+  /* border: solid; */
+  /* top: 55px; */
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* align-items: center; */
+  /* justify-content: flex-start; */
+  /* width: 80px; */
+  /* height: 100px; */
+  /* z-index: 1; */
+  overflow: hidden;
+  padding: 1rem;
+}
