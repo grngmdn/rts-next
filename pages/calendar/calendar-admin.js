@@ -25,11 +25,13 @@ const CalendarAdmin = () => {
 
   const createNewEvent = async () => {
     await addDoc(usersCollectionRef, { event: newEvent, date: newDate });
+    window.location.reload(true);
   };
 
   const deleteNewEvent = async (id) => {
     const userDoc = doc(db, 'calendar', id);
     await deleteDoc(userDoc);
+    window.location.reload(true);
   };
 
   return (

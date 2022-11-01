@@ -24,10 +24,10 @@ const Layout = ({ children }) => {
         <NavItem link='/' icon='ABOUT US'>
           hello world
         </NavItem>
-        <NavItem link='/' icon='MEDIA'>
+        <NavItem link='/media/photo' icon='MEDIA'>
           hello world
         </NavItem>
-        <NavItem link='/' icon='NEWS'>
+        <NavItem link='/calendar' icon='CALENDAR'>
           hello world
         </NavItem>
         <NavItem link='/obituary' icon='OBITUARY' />
