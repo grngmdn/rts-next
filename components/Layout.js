@@ -33,6 +33,7 @@ const Layout = ({ children }) => {
         <NavItem link='/obituary' icon='OBITUARY' />
         <NavItem link='/registration' icon='REGISTRATION' />
         <NavItem link='/contact' icon='CONTACT US' />
+        <NavItem link='/admin' icon='ADMIN' />
       </Nav>
       {children}
       <Footer />

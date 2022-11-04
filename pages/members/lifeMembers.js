@@ -1,7 +1,7 @@
 import React from 'react';
 
-const LifeMembers = () => {
-  return <div>LifeMembers</div>;
+const lifeMembers = () => {
+  return <div>lifeMembers</div>;
 };
 
-export default LifeMembers;
+export default lifeMembers;
