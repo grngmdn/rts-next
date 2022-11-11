@@ -34,7 +34,13 @@ const Admin = () => {
 
   // function to logout
   const logout = async () => {
-    await signOut(auth);
+    setLoading(true);
+    try {
+      await signOut(auth);
+    } catch (error) {
+      alert('error while logging out');
+    }
+    setLoading(false);
   };
 
   return (
@@ -57,7 +63,7 @@ const Admin = () => {
         <button onClick={login} disabled={loading || user}>
           Login
         </button>
-        <button onClick={logout} disabled={!user}>
+        <button onClick={logout} disabled={loading || !user}>
           Logout
         </button>
       </div>
