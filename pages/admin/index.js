@@ -6,6 +6,7 @@ import {
 import React, { useEffect, useState } from 'react';
 import AdminHome from '../../components/AdminHome';
 import { auth } from '../../database/firebase-config';
+import styles from './Admin.module.css';
 
 const Admin = () => {
   const [email, setEmail] = useState('');
@@ -75,7 +76,7 @@ const Admin = () => {
         )}
         {!user && (
           <button
-            className='bg-blue-500 px-4 py-1 text-white font-medium rounded hover:bg-blue-600'
+            className={styles.primaryBtn}
             type='submit'
             onClick={login}
             disabled={loading || user}
@@ -92,7 +93,12 @@ const Admin = () => {
         </h3>
         {user && (
           <div>
-            <button type='submit' onClick={logout} disabled={loading || !user}>
+            <button
+              type='submit'
+              className={styles.primaryBtn}
+              onClick={logout}
+              disabled={loading || !user}
+            >
               Logout
             </button>
             <hr />

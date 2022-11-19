@@ -6,12 +6,12 @@ import styles from '../styles/Footer.module.css';
 const Footer = () => {
   return (
     <div className={styles.container}>
-      <div>
-        <AiFillTwitterCircle />
-        <BsFacebook />
+      <div className='flex justify-evenly items-center w-40'>
+        <AiFillTwitterCircle color='white' fontSize='40px' />
+        <BsFacebook color='white' fontSize='35px' />
       </div>
       <div>
-        <p>
+        <p className='text-gray-400'>
           Copyright © Reading Tamu Samaj UK {new Date().getFullYear()} | All
           Rights Reserved
         </p>
