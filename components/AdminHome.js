@@ -5,19 +5,11 @@ import styles from '../pages/admin/Admin.module.css';
 const AdminHome = () => {
   const router = useRouter();
   return (
-    <div>
+    <div className='flex flex-col items-center bg-white shadow-md rounded mb-4'>
       <div>
-        <h1>Admin Home</h1>
+        <h1 className='text-4xl pt-5'>Admin Home</h1>
       </div>
-      <div>
-        <button
-          className={styles.primaryBtn}
-          onClick={() => {
-            router.push('/calendar/calendar-admin');
-          }}
-        >
-          CALENDAR
-        </button>
+      <nav className='grid grid-cols-2 gap-5 p-5'>
         <button
           className={styles.primaryBtn}
           onClick={() => {
@@ -90,7 +82,7 @@ const AdminHome = () => {
         >
           ORDINARY MEMBERS
         </button>
-      </div>
+      </nav>
     </div>
   );
 };
