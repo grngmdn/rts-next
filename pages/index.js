@@ -8,7 +8,7 @@ export default function Home() {
       <Head>
         <title>Home App</title>
       </Head>
-      <section className='h-[73vh]'>
+      <section className='min-h-[73vh]'>
         <h1>Homepage</h1>
       </section>
     </>

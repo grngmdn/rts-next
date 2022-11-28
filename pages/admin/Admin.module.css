@@ -1,3 +1,7 @@
 .primaryBtn {
-  @apply bg-blue-500 px-4 py-1 text-white font-medium rounded hover:bg-blue-600 rounded;
+  @apply bg-blue-500 px-4 py-1 text-white font-medium hover:bg-blue-600 rounded;
+}
+
+.adminBtn {
+  @apply bg-blue-500 px-4 py-5 text-white font-medium hover:bg-blue-600;
 }

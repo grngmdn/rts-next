@@ -16,6 +16,7 @@ const ObituaryAdmin = () => {
   const [newDob, setNewDob] = useState('');
   const [newDeath, setNewDeath] = useState('');
   const [newUrl, setNewUrl] = useState('');
+  const [newMemberNo, setNewMemberNo] = useState('');
   const usersCollectionRef = collection(db, 'obituary');
 
   useEffect(() => {
@@ -33,6 +34,7 @@ const ObituaryAdmin = () => {
       home: newHome,
       dob: newDob,
       death: newDeath,
+      memberNo: newMemberNo,
       url: newUrl,
     });
     window.location.reload(true);
@@ -71,6 +73,13 @@ const ObituaryAdmin = () => {
         />
         <input
           type='text'
+          placeholder='Member Number'
+          onChange={(event) => {
+            setNewMemberNo(event.target.value);
+          }}
+        />
+        <input
+          type='text'
           placeholder='Date of Birth'
           onChange={(event) => {
             setNewDob(event.target.value);
@@ -91,6 +100,7 @@ const ObituaryAdmin = () => {
             <img width='100px' src={people.url} />
             <p>{people.name}</p>
             <p>{people.home}</p>
+            <p>{people.memberNo}</p>
             <p>{people.dob}</p>
             <p>{people.death}</p>
             <button

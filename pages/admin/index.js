@@ -46,17 +46,17 @@ const Admin = () => {
   };
 
   return (
-    <div className='h-[73vh] w-full flex flex-col justify-start items-center'>
+    <div className='min-h-[73vh] w-full flex flex-col justify-center items-center bg-gray-200'>
       <div>
         {!user && (
           <div>
-            <h1 className='text-4xl pt-20 pb-5'>Admin Login</h1>
+            <h1 className='text-3xl font-bold pt-20 pb-5'>ADMIN LOGIN</h1>
           </div>
         )}
       </div>
 
       {/* Login form */}
-      <div className='flex flex-col gap-5 w-[400px] bg-white shadow-md rounded px-8 pt-6 mb-4'>
+      <div className='flex flex-col w-[400px] bg-white shadow-md rounded px-8 pt-6 mb-4'>
         {!user && (
           <div className=''>
             <div className='mb-4'>
@@ -107,12 +107,13 @@ const Admin = () => {
         )}
 
         {/* Loading text when loggin in  */}
-        <div>{loading && 'Loading...'}</div>
+        {loading && <p className='mt-10'>Loading...</p>}
 
         {/* Welcome text with users email, once logged in  */}
         <div className='flex flex-col pb-2 items-center'>
-          <div className='pb-2 text-lg'>
-            {user && <span>Hello</span>} {user?.email}&nbsp;
+          <div className='pb-2 text-lg text-red-500'>
+            {user && <span className='text-gray-600'>Hello,</span>}{' '}
+            {user?.email}&nbsp;
           </div>
         </div>
       </div>
@@ -121,10 +122,10 @@ const Admin = () => {
       {user && <AdminHome />}
 
       {/* Logout button once the user is already logged in  */}
-      <div className='my-5'>
+      <div className='my-5 p-4'>
         {user && (
-          <span className='inline-block align-baseline font-bold text-md text-gray-600 '>
-            Click here to Logout&nbsp;
+          <span className='inline-block align-baseline font-bold text-xl text-gray-600 '>
+            Click here to Logout&nbsp;&nbsp;
           </span>
         )}
         {user && (

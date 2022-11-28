@@ -2,23 +2,35 @@ import React from 'react';
 
 const Legislation = () => {
   return (
-    <div>
-      <div>
-        <img src='http://readingtamusamajuk.com/img/logo1.png' />
-        <h1>रिडिंग तमु समाज</h1>
-        <h2>संयुक्त अधिराज्य वेलायत</h2>
-        <h2>विधान २००३</h2>
-        <h3>(पहिलो संशोधन- २०१३)</h3>
-        <hr />
-        <h4>प्रकाशक</h4>
-        <h4>रिडिंग तमु समाज</h4>
-        <h4>चौथो कार्यसमिति</h4>
-        <h4>रिडिंग, वेलायत</h4>
-        <hr />
-        <h4>प्रस्तावना</h4>
+    <div className='min-h-[73vh] w-full flex justify-center bg-gray-200'>
+      <div className='max-w-[900px] w-[80vw] bg-gray-50 px-10 pt-5 pb-20'>
+        <div className='grid justify-center pb-10'>
+          <div className='grid justify-center'>
+            <img src='http://readingtamusamajuk.com/img/logo1.png' />
+          </div>
+          <div className='text-center pb-5'>
+            <h1 className='mt-5 text-2xl font-bold pb-2 text-blue-500'>
+              रिडिंग तमु समाज
+            </h1>
+            <h2 className='font-bold pb-10 text-blue-500'>
+              संयुक्त अधिराज्य वेलायत
+            </h2>
+            <h3 className='font-bold text-2xl'>विधान २००३</h3>
+            <h3 className='font-bold pb-10'>(पहिलो संशोधन- २०१३)</h3>
+            <hr />
+            <h4 className='pt-2 font-bold'>प्रकाशक</h4>
+            <h4 className='font-bold'>रिडिंग तमु समाज</h4>
+            <h4 className='font-bold'>चौथो कार्यसमिति</h4>
+            <h4 className='font-bold pb-2'>रिडिंग, वेलायत</h4>
+            <hr />
+          </div>
+          <h4 className='text-center font-bold pt-5'>प्रस्तावना</h4>
+        </div>
         <div>
-          <h3>धारा – १</h3>
-          <h4>पृष्टभूमि</h4>
+          <div className='bg-blue-400 text-center mb-2'>
+            <h3 className='font-bold'>धारा – १</h3>
+          </div>
+          <h4 className='font-bold py-2'>पृष्टभूमि</h4>
           <p>
             ‘रिडिंग तमु समाज’ ‘सुरुमा रिडिंग तमु घी’ को नामवाट सन् २००३ मा
             स्थापना भएको थियो । रिडिंग क्षेत्रमा गुरुंगहरुको वढ्दो संख्यालाई
@@ -28,16 +40,20 @@ const Legislation = () => {
           </p>
         </div>
         <div>
-          <h3>धारा – २</h3>
-          <h4>सस्था नाम</h4>
+          <div className='bg-blue-400 text-center mt-10 mb-2'>
+            <h3 className='font-bold'>धारा – १</h3>
+          </div>
+          <h4 className='font-bold py-2'>सस्था नाम</h4>
           <p>
             यस सस्थाको नाम ‘रिडिंग तमु समाज’ हुँनेछ । अंग्रेजीमा यसको नाम आर.टि.
             एस. हुँनेछ ।
           </p>
         </div>
         <div>
-          <h3>धारा – ३</h3>
-          <h4>चिनारी</h4>
+          <div className='bg-blue-400 text-center mb-2 mt-10'>
+            <h3 className='font-bold'>धारा – १</h3>
+          </div>
+          <h4 className='font-bold py-2'>चिनारी</h4>
           <p>
             रिडिंग तमु समाज भन्नाले रिडिंग र यस वरिपरि क्षेत्रमा वसोवास गर्ने
             नेपालका विभन्न भागका सवै गुरुंगहरुको प्रतिनिधित्व गर्दछ । यस समाजले
@@ -46,8 +62,10 @@ const Legislation = () => {
           </p>
         </div>
         <div>
-          <h3>धारा – ४</h3>
-          <h4>उदेश्यहरु</h4>
+          <div className='bg-blue-400 text-center mb-2 mt-10'>
+            <h3 className='font-bold'>धारा – १</h3>
+          </div>
+          <h4 className='font-bold py-2'>उदेश्यहरु</h4>
           <p>रिडिंग तमु समाजका उदेश्यहरु देहायवमोजिम हुँनेछ:</p>
           <li>
             १) गुरुंग समाजको संस्कृति र परम्परा को जगेर्ना र प्रवर्ध्दन गर्ने ।
@@ -77,8 +95,10 @@ const Legislation = () => {
           </li>
         </div>
         <div>
-          <h3>ARTICLE 5</h3>
-          <h4>MEMBERSHIP</h4>
+          <div className='bg-blue-400 text-center mb-2 mt-10'>
+            <h3 className='font-bold'>धारा – १</h3>
+          </div>
+          <h4 className='font-bold py-2'>MEMBERSHIP</h4>
           <p>
             The membership shall be provided only to those Gurungs who are
             resided in Reading Borough Council and its surrounding area.
@@ -105,8 +125,10 @@ const Legislation = () => {
           </li>
         </div>
         <div>
-          <h3>ARTICLE 6</h3>
-          <h4>SOCIAL AND WELFARE SUPPORT</h4>
+          <div className='bg-blue-400 text-center mb-2 mt-10'>
+            <h3 className='font-bold'>धारा – १</h3>
+          </div>
+          <h4 className='font-bold py-2'>SOCIAL AND WELFARE SUPPORT</h4>
           <p>
             1. Death. In case of death, £1500 shall be provided to the next to
             kin of the Life Member and £500 for the General Member. Furthermore,
@@ -126,8 +148,10 @@ const Legislation = () => {
           <p>4. Marriage/Death: A card + flower shall be arranged.</p>
         </div>
         <div>
-          <h3>ARTICLE 7</h3>
-          <h4>THE EXECUTIVE COMMITTEE</h4>
+          <div className='bg-blue-400 text-center mb-2 mt-10'>
+            <h3 className='font-bold'>धारा – १</h3>
+          </div>
+          <h4 className='font-bold py-2'>THE EXECUTIVE COMMITTEE</h4>
           <p>
             There shall be an Executive Committee to run the Association under
             this constitution. The composition of the Executive Committee shall
@@ -158,8 +182,12 @@ const Legislation = () => {
           </p>
         </div>
         <div>
-          <h3>ARTICLE 8</h3>
-          <h4>FUNCTION OF THE EXECUTIVE COMMITTEE</h4>
+          <div className='bg-blue-400 text-center mb-2 mt-10'>
+            <h3 className='font-bold'>धारा – १</h3>
+          </div>
+          <h4 className='font-bold py-2'>
+            FUNCTION OF THE EXECUTIVE COMMITTEE
+          </h4>
           <p>The function of the Executive Committee shall be as follows:</p>
           <li>
             1. Plan the policy and implement it as per the objectives set out by
@@ -169,8 +197,12 @@ const Legislation = () => {
           <li>3. Preparation of agendas for Annual General Meeting.</li>
         </div>
         <div>
-          <h3>ARTICLE 9</h3>
-          <h4>RIGHTS AND DUTIES OF THE COMMITTEE MEMBERS</h4>
+          <div className='bg-blue-400 text-center mb-2 mt-10'>
+            <h3 className='font-bold'>धारा – १</h3>
+          </div>
+          <h4 className='font-bold py-2'>
+            RIGHTS AND DUTIES OF THE COMMITTEE MEMBERS
+          </h4>
           <p>1. Chairman</p>
           <li>• Shall preside the meetings;</li>
           <li>• Shall represent on behalf of Samaj;</li>
@@ -272,8 +304,10 @@ const Legislation = () => {
           </li>
         </div>
         <div>
-          <h3>ARTICLE 10</h3>
-          <h4>MEETING</h4>
+          <div className='bg-blue-400 text-center mb-2 mt-10'>
+            <h3 className='font-bold'>धारा – १</h3>
+          </div>
+          <h4 className='font-bold py-2'>MEETING</h4>
           <li>
             1. Calendar Events. As soon as the new Executive Committee resumes
             the office, the committee shall publish the Annual Calendar Events.
@@ -288,8 +322,10 @@ const Legislation = () => {
           </li>
         </div>
         <div>
-          <h3>ARTICLE 11</h3>
-          <h4>ELECTION/QUALIFICATION</h4>
+          <div className='bg-blue-400 text-center mb-2 mt-10'>
+            <h3 className='font-bold'>धारा – १</h3>
+          </div>
+          <h4 className='font-bold py-2'>ELECTION/QUALIFICATION</h4>
           <li>
             1. The Executive Committee shall nominate three member’s Election
             Commission to conduct the election of the Executive Committee. The
@@ -344,8 +380,10 @@ const Legislation = () => {
           </li>
         </div>
         <div>
-          <h3>ARTICLE 12</h3>
-          <h4>SOURCE OF INCOME/AUDIT</h4>
+          <div className='bg-blue-400 text-center mb-2 mt-10'>
+            <h3 className='font-bold'>धारा – १</h3>
+          </div>
+          <h4 className='font-bold py-2'>SOURCE OF INCOME/AUDIT</h4>
           <li>
             1. Membership: membership fee shall be either one off payment of
             £100 for the life member or £20 for ordinary membership. Ordinary
@@ -359,8 +397,10 @@ const Legislation = () => {
           </li>
         </div>
         <div>
-          <h3>ARTICLE 13</h3>
-          <h4>IMPEACHMENT</h4>
+          <div className='bg-blue-400 text-center mb-2 mt-10'>
+            <h3 className='font-bold'>धारा – १</h3>
+          </div>
+          <h4 className='font-bold py-2'>IMPEACHMENT</h4>
           <p>
             Any members shall be impeached by two third majority decision of the
             Executive Committee. The members can be impeached on the following
@@ -380,8 +420,10 @@ const Legislation = () => {
           </p>
         </div>
         <div>
-          <h3>ARTICLE 14</h3>
-          <h4>AMENDMENT OF CONSTITUTION</h4>
+          <div className='bg-blue-400 text-center mb-2 mt-10'>
+            <h3 className='font-bold'>धारा – १</h3>
+          </div>
+          <h4 className='font-bold py-2'>AMENDMENT OF CONSTITUTION</h4>
           <p>
             Amendments to any article, clause or any particular word mentioned
             in the existing constitution, must be submitted in writing to the

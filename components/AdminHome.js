@@ -5,13 +5,15 @@ import styles from '../pages/admin/Admin.module.css';
 const AdminHome = () => {
   const router = useRouter();
   return (
-    <div className='flex flex-col items-center bg-white shadow-md rounded mb-4'>
-      <div>
-        <h1 className='text-4xl pt-5'>Admin Home</h1>
+    <div className='flex flex-col bg-white shadow-md rounded mb-4 max-w-[900px] w-[80vw]'>
+      <div className='text-center'>
+        <h1 className='text-4xl font-bold pt-5 pb-5 text-blue-500'>
+          Admin Home
+        </h1>
       </div>
-      <nav className='grid grid-cols-2 gap-5 p-5'>
+      <nav className='grid grid-cols-2 gap-10 p-5'>
         <button
-          className={styles.primaryBtn}
+          className={styles.adminBtn}
           onClick={() => {
             router.push('/obituary/obituary-admin');
           }}
@@ -19,7 +21,7 @@ const AdminHome = () => {
           OBITUARY
         </button>
         <button
-          className={styles.primaryBtn}
+          className={styles.adminBtn}
           onClick={() => {
             router.push('/media/photo-admin');
           }}
@@ -27,7 +29,7 @@ const AdminHome = () => {
           PHOTO ALBUM
         </button>
         <button
-          className={styles.primaryBtn}
+          className={styles.adminBtn}
           onClick={() => {
             router.push('/media/video-admin');
           }}
@@ -35,7 +37,7 @@ const AdminHome = () => {
           VIDEO
         </button>
         <button
-          className={styles.primaryBtn}
+          className={styles.adminBtn}
           onClick={() => {
             router.push('/calendar/calendar-admin');
           }}
@@ -43,7 +45,7 @@ const AdminHome = () => {
           CALENDAR
         </button>
         <button
-          className={styles.primaryBtn}
+          className={styles.adminBtn}
           onClick={() => {
             router.push('/members/advisors-admin');
           }}
@@ -51,7 +53,7 @@ const AdminHome = () => {
           ADVISOR MEMBERS
         </button>
         <button
-          className={styles.primaryBtn}
+          className={styles.adminBtn}
           onClick={() => {
             router.push('/members/executiveMembers-admin');
           }}
@@ -59,7 +61,7 @@ const AdminHome = () => {
           EXECUTIVE MEMBERS
         </button>
         <button
-          className={styles.primaryBtn}
+          className={styles.adminBtn}
           onClick={() => {
             router.push('/members/keyMembers-admin');
           }}
@@ -67,7 +69,7 @@ const AdminHome = () => {
           KEY MEMBERS
         </button>
         <button
-          className={styles.primaryBtn}
+          className={styles.adminBtn}
           onClick={() => {
             router.push('/members/lifeMembers-admin');
           }}
@@ -75,7 +77,7 @@ const AdminHome = () => {
           LIFE MEMBERS
         </button>
         <button
-          className={styles.primaryBtn}
+          className={styles.adminBtn}
           onClick={() => {
             router.push('/members/ordinaryMembers-admin');
           }}

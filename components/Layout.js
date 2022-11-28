@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
           />
           <DropDownMenu dropdownLink='lifeMembers' rts='RTS Life Members' />
         </NavItem>
-        <NavItem link='/' icon='ABOUT US'>
+        <NavItem link='/about/identity' icon='ABOUT US'>
           hello world
         </NavItem>
         <NavItem link='/media/photo' icon='MEDIA'>

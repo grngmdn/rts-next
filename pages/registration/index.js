@@ -1,17 +1,17 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import styles from './Registration.module.css';
 
 const Registration = () => {
   return (
     <>
-      <div className={styles.outer}>
-        <main className={styles.container}>
-          <section className={styles.section}>
-            <h1 className={styles.heading}>MEMBERSHIP FORM</h1>
-            <div className={styles.line}></div>
-            <p>
+      <div className='min-h-[72vh] flex justify-center bg-gray-200'>
+        <main className='max-w-[900px] w-[80vw] bg-gray-50 p-10'>
+          <section className='mb-10'>
+            <h1 className='text-3xl font-bold text-blue-500'>
+              MEMBERSHIP FORM
+            </h1>
+            <p className='pt-10 pb-5'>
               If you are looking to join us and become a part of our
               organisation, we have provided a Membership Registration form
               below. Please print and complete the application form by filling
@@ -20,13 +20,16 @@ const Registration = () => {
               page) and arrange for the hand-in of the form. The Membership
               Joining fees are:
             </p>
-            <ul>
-              <li className={styles.list}>Ordinary member: £30</li>
-              <li className={styles.list}>
-                Life member: £100 (For each person)
-              </li>
+            <ul className='mb-5'>
+              <li className=''>Ordinary member: £30</li>
+              <li className=''>Life member: £100 (For each person)</li>
             </ul>
-            <p>Click the image below to download the form or click here.</p>
+            <p className='mb-5'>
+              Click the image below to download the form or{' '}
+              <Link href='http://readingtamusamajuk.com/img/registration.pdf'>
+                <a className='text-red-500'>click here.</a>
+              </Link>
+            </p>
             <Link href='http://readingtamusamajuk.com/img/registration.pdf'>
               <a>
                 <Image
@@ -38,17 +41,22 @@ const Registration = () => {
               </a>
             </Link>
           </section>
-          <br />
-          <div className={styles.line}></div>
-          <section className={styles.section}>
-            <h3 className={styles.subheading}>STANDING ORDER MANDATE</h3>
-            <p>
+          <hr />
+          <div className=''></div>
+          <section className='mt-10'>
+            <h3 className='font-bold mb-5 text-blue-500'>
+              STANDING ORDER MANDATE
+            </h3>
+            <p className='mb-5'>
               Once you are a member of Reading Tamu Samaj UK, a monthly direct
               debit of £10 will be required as part of RTS SYORA.
             </p>
-            <p>
+            <p className='mb-5'>
               Click the image below to download the Standing Order Mandate form
-              or click here.
+              or{' '}
+              <Link href='http://readingtamusamajuk.com/img/registration2.pdf'>
+                <a className='text-red-500'>click here.</a>
+              </Link>
             </p>
             <Link href='http://readingtamusamajuk.com/img/registration2.pdf'>
               <a>

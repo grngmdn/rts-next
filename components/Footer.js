@@ -11,7 +11,7 @@ const Footer = () => {
         <BsFacebook color='white' fontSize='35px' />
       </div>
       <div>
-        <p className='text-gray-400'>
+        <p className='text-gray-400 text-sm'>
           Copyright © Reading Tamu Samaj UK {new Date().getFullYear()} | All
           Rights Reserved
         </p>
