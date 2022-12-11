@@ -14,10 +14,15 @@ const MemberCard = ({ name, position, email }) => {
       <div className='p-2 text-center'>
         <h1 className='text-xl font-extrabold'>{name.toUpperCase()}</h1>
         <h1 className='text-red-500 text-sm font-bold pb-5'>
-          {position.toUpperCase()}
+          {position && position.toUpperCase()}
         </h1>
         <h1 className='text-sm'>
-          <span className='font-bold'>Email:</span> {email ? email : 'N/A'}
+          {email && (
+            <p>
+              <span className='font-bold'>Email: </span>
+              {email}
+            </p>
+          )}
         </h1>
       </div>
     </div>

@@ -13,7 +13,7 @@ const LifeMembers = () => {
   const [name, setName] = useState('');
   const [memberNo, setMemberNo] = useState(0);
   const [appointment, setAppointment] = useState('');
-  const newCollectionRef = collection(db, 'life-members');
+  const newCollectionRef = collection(db, 'life_members');
 
   useEffect(() => {
     const fetchMembers = async () => {
