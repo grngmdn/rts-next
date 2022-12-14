@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { db } from '../../database/firebase-config';
 import { collection, getDocs } from 'firebase/firestore/lite';
-import styles from './Calendar.module.css';
 
 const Calendar = () => {
   const [event, setEvent] = useState([]);
@@ -16,7 +15,7 @@ const Calendar = () => {
   }, []);
 
   return (
-    <div className='min-h-[73vh] w-full flex justify-center bg-gray-200'>
+    <div className='min-h-[86vh] w-full flex justify-center bg-gray-200'>
       <section className='max-w-[900px] w-[80vw] bg-gray-50 p-10'>
         <h1 className='text-3xl font-bold pb-10 text-blue-500'>
           UPCOMING EVENTS {new Date().getFullYear()}

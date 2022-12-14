@@ -46,7 +46,7 @@ const Admin = () => {
   };
 
   return (
-    <div className='min-h-[73vh] w-full flex flex-col justify-center items-center bg-gray-200'>
+    <div className='min-h-[86vh] w-full flex flex-col justify-center items-center bg-gray-200'>
       <div>
         {!user && (
           <div>

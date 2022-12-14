@@ -1,33 +1,19 @@
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React from 'react';
 import { IoMdArrowDropdown } from 'react-icons/io';
-import { GiHamburgerMenu } from 'react-icons/gi';
+import BurgerMenu from './BurgerMenu';
 
 const Nav = () => {
-  // State to toggle burger menu
-  const [open, setOpen] = useState(true);
-
-  // Function to handle burger menu toggle
-  const handleClick = () => {
-    setOpen(false);
-  };
-
   return (
     <div className='flex w-full justify-center items-center h-[4vh] bg-[#343a3f]'>
       {/* Burger Menu for mobile screen */}
       <div className='md:hidden w-[80vw]'>
-        <div
-          onClick={handleClick}
-          className='cursor-pointer border-2 border-gray-500 flex justify-center items-center py-2 min-w-[65px] w-[65px] md:hidden font-extrabold text-gray-50 text-xs'
-        >
-          MENU&nbsp;
-          <GiHamburgerMenu style={{ fontSize: '12px' }} />
-        </div>
+        <BurgerMenu />
       </div>
 
       {/* Nav for desktop screen */}
-      <nav className=' max-w-[900px] w-[80vw] hidden md:block'>
-        <div className='flex justify-around items-center font-extrabold text-gray-50 text-xs'>
+      <nav className=' max-w-[900px] w-[80vw] hidden lg:block'>
+        <div className='flex justify-around items-center font-extrabold text-gray-50 text-xs tracking-wider'>
           <Link href='/'>
             <a className=''>HOME</a>
           </Link>
@@ -42,7 +28,7 @@ const Nav = () => {
                 </a>
               </Link>
             </div>
-            <div className='hidden absolute bg-gray-50 min-w-[120px] border-[1px] border-gray-300 z-50 font-normal text-sm'>
+            <div className='rounded hidden absolute bg-gray-50 min-w-[120px] border-[1px] border-gray-300 z-50 font-normal text-sm'>
               <Link href='/members/keyMembers'>
                 <a className='text-gray-700 py-3 px-2 block hover:bg-gray-200 text-center'>
                   Key Members
@@ -81,7 +67,7 @@ const Nav = () => {
                 </a>
               </Link>
             </div>
-            <div className='font-normal text-sm hidden absolute bg-gray-50 min-w-[80px] border-[1px] border-gray-300 z-50'>
+            <div className='rounded font-normal text-sm hidden absolute bg-gray-50 min-w-[80px] border-[1px] border-gray-300 z-50'>
               <Link href='/about/identity'>
                 <a className='text-gray-700 py-3 px-2 block hover:bg-gray-200 text-center'>
                   Our Identity
@@ -110,7 +96,7 @@ const Nav = () => {
                 </a>
               </Link>
             </div>
-            <div className='font-normal text-sm hidden absolute bg-gray-50 min-w-[80px] border-[1px] border-gray-300 z-50'>
+            <div className='rounded font-normal text-sm hidden absolute bg-gray-50 min-w-[80px] border-[1px] border-gray-300 z-50'>
               <Link href='/media/photo'>
                 <a className='text-gray-700 py-3 px-2 block hover:bg-gray-200 text-center'>
                   Photos
