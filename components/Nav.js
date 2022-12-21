@@ -5,7 +5,9 @@ import BurgerMenu from './BurgerMenu';
 
 const Nav = () => {
   return (
-    <div className='flex w-full justify-center items-center h-[4vh] bg-[#343a3f]'>
+    <div
+      className={`flex w-full justify-center items-center h-12 bg-[#343a3f]`}
+    >
       {/* Burger Menu for mobile screen */}
       <div className='md:hidden w-[80vw]'>
         <BurgerMenu />
@@ -28,7 +30,7 @@ const Nav = () => {
                 </a>
               </Link>
             </div>
-            <div className='rounded hidden absolute bg-gray-50 min-w-[120px] border-[1px] border-gray-300 z-50 font-normal text-sm'>
+            <div className='rounded hidden absolute bg-gray-50 min-w-[120px] border-[1px] border-gray-300 z-50 font-bold text-sm'>
               <Link href='/members/keyMembers'>
                 <a className='text-gray-700 py-3 px-2 block hover:bg-gray-200 text-center'>
                   Key Members
@@ -67,7 +69,7 @@ const Nav = () => {
                 </a>
               </Link>
             </div>
-            <div className='rounded font-normal text-sm hidden absolute bg-gray-50 min-w-[80px] border-[1px] border-gray-300 z-50'>
+            <div className='rounded text-sm hidden absolute bg-gray-50 min-w-[80px] border-[1px] border-gray-300 z-50 font-bold'>
               <Link href='/about/identity'>
                 <a className='text-gray-700 py-3 px-2 block hover:bg-gray-200 text-center'>
                   Our Identity
@@ -96,7 +98,7 @@ const Nav = () => {
                 </a>
               </Link>
             </div>
-            <div className='rounded font-normal text-sm hidden absolute bg-gray-50 min-w-[80px] border-[1px] border-gray-300 z-50'>
+            <div className='rounded text-sm hidden absolute bg-gray-50 min-w-[80px] border-[1px] border-gray-300 z-50 font-bold'>
               <Link href='/media/photo'>
                 <a className='text-gray-700 py-3 px-2 block hover:bg-gray-200 text-center'>
                   Photos

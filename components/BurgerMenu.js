@@ -1,38 +1,70 @@
 import Link from 'next/link';
-import React, { useState } from 'react';
+import { useRouter } from 'next/router';
+import React, { useEffect, useRef, useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoMdArrowDropdown } from 'react-icons/io';
 
 const BurgerMenu = () => {
   // State to toggle burger menu
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const [membersMenu, setMembersMenu] = useState(false);
   const [aboutMenu, setAboutMenu] = useState(false);
   const [mediaMenu, setMediaMenu] = useState(false);
+  const navigationRef = useRef();
+  const { pathname } = useRouter();
+
+  // logic to handle clicking outside to close menu"
+  useEffect(() => {
+    // when user clicks outside the nav, fn below sets the open state to false and closes the nav bar
+    const handleClickOutside = (event) => {
+      if (
+        navigationRef.current &&
+        !navigationRef.current.contains(event.target)
+      ) {
+        setOpen(false);
+      }
+    };
+
+    // Attach the event listener
+    document.addEventListener('click', handleClickOutside);
+
+    // Clean up the event listener on unmount
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [navigationRef]);
+
+  // logic to close navigation menu when user is routed to another page using the nav link
+  useEffect(() => {
+    setOpen(false); // Close the navigation panel
+  }, [pathname]);
 
   return (
     <div className=''>
-      <div className='text-gray-50 relative'>
+      <div className='text-gray-50 relative' ref={navigationRef}>
+        {/* Hamburger menu icon  */}
         <GiHamburgerMenu
-          className='text-2xl cursor-pointer'
+          className='text-3xl cursor-pointer'
           onClick={() => {
-            setOpen(!open);
+            setOpen((open) => !open);
           }}
         />
+
+        {/* Navigation displayed when the Hamburger menu is clicked  */}
         <nav
           className={`${
-            !open ? 'block' : 'hidden'
-          }  absolute top-5 left-0 bg-[#343a3f] w-full h-auto py-5 pl-3 flex flex-col text-gray-50 text-md gap-5`}
+            open ? 'block' : 'hidden'
+          }  absolute top-9 left-0 bg-[#343a3f] w-full h-auto py-5 pl-3 flex flex-col text-gray-50 text-md gap-5 z-50`}
         >
           <Link href='/'>
             <a>Home</a>
           </Link>
 
-          {/* Dropdown menu for Members nav */}
-          <div className='' onClick={() => setMembersMenu(!membersMenu)}>
+          {/* Dropdown submenu for Members nav */}
+          <div className=''>
             <div>
               <Link href='#'>
-                <a>
+                <a onClick={() => setMembersMenu(!membersMenu)}>
                   Members <IoMdArrowDropdown style={{ display: 'inline' }} />
                 </a>
               </Link>
@@ -60,11 +92,11 @@ const BurgerMenu = () => {
             </div>
           </div>
 
-          {/* Dropdown menu for About nav */}
-          <div onClick={() => setAboutMenu(!aboutMenu)}>
+          {/* Dropdown submenu for About nav */}
+          <div>
             <div>
               <Link href='#'>
-                <a>
+                <a onClick={() => setAboutMenu(!aboutMenu)}>
                   About us <IoMdArrowDropdown style={{ display: 'inline' }} />
                 </a>
               </Link>
@@ -86,11 +118,11 @@ const BurgerMenu = () => {
             </div>
           </div>
 
-          {/* Dropdown menu for Media nav */}
-          <div onClick={() => setMediaMenu(!mediaMenu)}>
+          {/* Dropdown submenu for Media nav */}
+          <div>
             <div>
               <Link href='#'>
-                <a>
+                <a onClick={() => setMediaMenu(!mediaMenu)}>
                   Media <IoMdArrowDropdown style={{ display: 'inline' }} />
                 </a>
               </Link>

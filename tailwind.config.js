@@ -36,6 +36,9 @@ module.exports = {
         silver: '#ecebff',
         bermuda: '#78dcca',
       },
+      backgroundImage: {
+        hero: "url('../public/himal.jpg')",
+      },
     },
   },
   plugins: [],
