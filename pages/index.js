@@ -34,7 +34,7 @@ export default function Home() {
             <section className='w-full h-auto'>{<Slideshow />}</section>
             <section className='grid grid-cols-1 md:grid-cols-7 gap-5'>
               {/* Main blog contents  */}
-              <div className='border-2 col-span-5 rounded'>{<Blog />}</div>
+              <div className='col-span-5'>{<Blog />}</div>
               {/* Side contents on the right of the page  */}
               <aside className='col-span-2 flex flex-col gap-5'>
                 {<Events />}

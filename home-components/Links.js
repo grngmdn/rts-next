@@ -3,7 +3,7 @@ import React from 'react';
 const Links = () => {
   return (
     <div className='flex flex-col gap-2 border-2 rounded'>
-      <div className='bg-blue-500 py-1 rounded'>
+      <div className='bg-[#343a3f] py-1 rounded'>
         <h1 className='text-xl text-gray-50 font-extrabold tracking-wider px-2 text-center'>
           USEFUL LINKS
         </h1>

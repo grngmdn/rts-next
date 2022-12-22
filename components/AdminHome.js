@@ -15,18 +15,18 @@ const AdminHome = () => {
         <button
           className={styles.adminBtn}
           onClick={() => {
-            router.push('/obituary/obituary-admin');
+            router.push('/newpost');
           }}
         >
-          OBITUARY
+          NEW POST
         </button>
         <button
           className={styles.adminBtn}
           onClick={() => {
-            router.push('/media/photo-admin');
+            router.push('/obituary/obituary-admin');
           }}
         >
-          PHOTO ALBUM
+          OBITUARY
         </button>
         <button
           className={styles.adminBtn}

@@ -36,9 +36,7 @@ const Events = () => {
   const customStyles = {
     headCells: {
       style: {
-        paddingLeft: '8px', // override the cell padding for head cells
-        paddingRight: '8px',
-        backgroundColor: '#3B81F6',
+        backgroundColor: '#7d8993',
         color: 'white',
         fontSize: '15px',
         border: '1px solid #e2e2e2',
@@ -47,8 +45,6 @@ const Events = () => {
     },
     cells: {
       style: {
-        paddingLeft: '8px', // override the cell padding for data cells
-        paddingRight: '8px',
         border: '1px solid #e2e2e2',
       },
     },
@@ -56,8 +52,8 @@ const Events = () => {
 
   return (
     <div className='flex flex-col gap-2 border-2 rounded'>
-      <div className='bg-blue-500 py-1 rounded'>
-        <h1 className='text-xl tracking-wider text-gray-50 font-extrabold text-center rounded'>
+      <div className='bg-[#343a3f] py-1 rounded'>
+        <h1 className='text-xl tracking-wider px-2 text-gray-50 font-extrabold text-center rounded'>
           UPCOMING EVENTS
         </h1>
       </div>

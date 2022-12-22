@@ -4,8 +4,8 @@ import React from 'react';
 const Membership = () => {
   return (
     <div className='flex flex-col gap-2 border-2 rounded'>
-      <div className='bg-blue-500 py-1 rounded'>
-        <h1 className=' tracking-wider text-xl text-gray-50 font-extrabold text-center rounded'>
+      <div className='bg-[#343a3f] py-1 rounded'>
+        <h1 className=' tracking-wider text-xl text-gray-50 font-extrabold text-center rounded px-2'>
           MEMBERSHIP FORM
         </h1>
       </div>
